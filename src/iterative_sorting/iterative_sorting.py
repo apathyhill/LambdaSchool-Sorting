@@ -34,7 +34,7 @@ def count_sort(arr):
     if min(arr) < 0:
         return "Error, negative numbers not allowed in Count Sort"
     # Create count array and hold each number's count
-    count = [0 for _ in range(max(arr))]
+    count = [0 for _ in range(max(arr)+1)]
     for i in arr:
         count[i] += 1
     print(count)
